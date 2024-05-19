@@ -1,0 +1,9 @@
+Appratus required:- Bread board, LED, NODE-MCU, Ir sensor, Jumping Wire
+Connect led to the bread board
+then positive part of led to the D2 of the Controller
+and negative part to the G 
+and conect the ir sensor to the controller
+Out to D1
+GND to G
+VCC to 3V
+Then upload the code through ardino ide ans set thresold frequency
