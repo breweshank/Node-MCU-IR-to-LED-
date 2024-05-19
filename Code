@@ -1,0 +1,21 @@
+int const irSensorPin = 5;// D1 
+int const ledPin = 4;// D2
+void setup() {
+  Serial.begin(115200);
+  pinMode(irSensorPin, INPUT);
+  pinMode(ledPin, OUTPUT);
+  digitalWrite(ledPin, LOW);
+  digitalWrite(ledPin, HIGH);
+}
+
+void loop() {
+  int irSensorValue = digitalRead(irSensorPin);
+  
+  if (irSensorValue == LOW){
+    digitalWrite(ledPin, HIGH );
+  
+  }else{
+    digitalWrite(ledPin, LOW);
+  }
+ delay(1000);
+}
